@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-Cofee☕ | Tienda online para cafeterías</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1><img class="logo" src="./assets/img/icono-cafe.svg" alt="">e-Cofee☕/Vamos al Grano</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos🔎</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <h2>Todo para tu cafetería, en un solo lugar</h2>
+        <p>Café en grano, equipos y accesorios para cafeterías. Comprá online y recibí tu pedido en todo el país.</p>
+        <a class="boton" href="#productos">Ver productos</a>
+      </div>
+      <img class="grano" src="./assets/img/grano-cafe.gif" alt="Grano de café animado">
+      <img class="grano" src="./assets/img/grano-cafe.gif" alt="Grano de café animado">
+      <img class="grano" src="./assets/img/grano-cafe.gif" alt="Grano de café animado">
+      <img class="grano" src="./assets/img/grano-cafe.gif" alt="Grano de café animado">
+    </section>
+
+    <section id="beneficios">
+      <div class="beneficios">
+        <p><strong>Envío a todo el país</strong><br>Rápido y con seguimiento.</p>
+        <p><strong>Precios por mayor</strong><br>Descuentos para cafeterías.</p>
+        <p><strong>Pagá como quieras</strong><br>Tarjeta, transferencia o efectivo.</p>
+      </div>
+    </section>
+
+    <section id="productos">
+      <h2>Productos para tu cafetería ☕ </h2>
+      <div class="productos">
+
+        <article class="tarjeta">
+          <img src="./assets/img/cafecillo.png" alt="Bolsa de café en grano">
+          <span class="etiqueta">Café</span>
+          <h3>Café en grano 1 kg</h3>
+          <p>Mezcla de especialidad, tostado medio.</p>
+          <p class="precio">$18.500</p>
+          <button type="button" class="boton">Agregar al carrito</button>
+        </article>
+
+        <article class="tarjeta">
+          <img src="./assets/img/molinillo.png" alt="Molinillo de café">
+          <span class="etiqueta">Equipos</span>
+          <h3>Molinillo profesional</h3>
+          <p>Molienda pareja y ajustable.</p>
+          <p class="precio">$95.000</p>
+          <button type="button" class="boton">Agregar al carrito</button>
+        </article>
+
+        <article class="tarjeta">
+          <img src="./assets/img/cafetera.png" alt="Cafetera espresso">
+          <span class="etiqueta">Equipos</span>
+          <h3>Cafetera espresso</h3>
+          <p>Ideal para el mostrador de tu local.</p>
+          <p class="precio">$480.000</p>
+          <button type="button" class="boton">Agregar al carrito</button>
+        </article>
+
+        <article class="tarjeta">
+          <img src="./assets/img/tasillas.png" alt="Set de tazas de café">
+          <span class="etiqueta">Accesorios</span>
+          <h3>Pack de 6 tazas</h3>
+          <p>Cerámica resistente para uso diario.</p>
+          <p class="precio">$24.000</p>
+          <button type="button" class="boton">Agregar al carrito</button>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="video">
+      <h2>Cómo elegir el café para tu local</h2>
+      <div class="video-contenedor">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mUuZEX2Q_R0?si=xhKrL8wCNFanTHRA"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="resenas">
+      <h2>Lo que dicen las cafeterías que nos eligen</h2>
+      <div class="resenas">
+        <blockquote>
+          <p>El café llega siempre fresco y nuestros clientes lo notan.</p>
+          <footer>— Lucía, Café del Parque</footer>
+        </blockquote>
+        <blockquote>
+          <p>Compramos la cafetera y el molinillo acá. Excelente atención.</p>
+          <footer>— Martín, Tostado Local</footer>
+        </blockquote>
+        <blockquote>
+          <p>Los precios por mayor nos ayudaron a ahorrar cada mes.</p>
+          <footer>— Carolina, La Esquina</footer>
+        </blockquote>
+        <blockquote>
+          <p>Envío rápido y todo bien embalado.</p>
+          <footer>— Diego, Bar Central</footer>
+        </blockquote>
+      </div>
+    </section>
+
+       <section id="contacto">
+      <h2>Contacto</h2>
+      <p class="intro-form">¿Querés un presupuesto por mayor o tenés dudas? Escribinos.</p>
+      <!-- Reemplazá TU_ID por el código que te da Formspree -->
+      <form action="https://formspree.io/f/mdeapoyw" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="cafeteria">Nombre de tu cafetería</label>
+        <input type="text" id="cafeteria" name="cafeteria">
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit" class="boton">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>&copy; 2026 e-cofee. Proyecto de pre-entrega.</p>
+    <p>Alumno Ruben_Santana_Talento_tech</p>
+    <img class="logo_footer" src="./assets/img/tech.png" alt="Ruben_Santana_Talento_tech">
+    <img class="grano" src="./assets/img/grano-cafe.gif" alt="Grano de café animado">
+    </section>
+  </footer>
+
+</body>
+</html>
